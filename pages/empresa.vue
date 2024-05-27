@@ -1,30 +1,18 @@
 <template>
     <div>
-        <div class="bg-gray-100">
-            <div class="container mx-auto flex items-center space-x-4 h-10 mb-10">
-                <NuxtLink :to="{name: 'empresa'}">A empresa</NuxtLink>
-                <NuxtLink :to="{name: 'produtos'}">Produtos</NuxtLink>
-                <NuxtLink to="/servicos">Serviços</NuxtLink>
-            </div>
-        </div>
-        
-        <div>
-            <div class="container mx-auto">
-                <h1 class="text-lg font-bold">A empresa</h1>
-                <p>Essa é uma grande descrição da empresa e blablabla...</p>
-            </div>
-        </div>
+        <h1 class="text-lg font-bold">A empresa</h1>
+        <p>Essa é uma grande descrição da empresa e blablabla...</p>
     </div>
 </template>
 
 <script>
-    export default {
-        name: '',
+export default {
+    name: '',
+    layout: '',
+    data() {
+        return {
 
-        data() {
-            return {
-
-            }
         }
     }
+}
 </script>

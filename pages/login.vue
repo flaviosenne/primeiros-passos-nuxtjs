@@ -1,15 +1,15 @@
 <template>
     <div>
-        {{ $route.params.slug }}
+        Login
     </div>
 </template>
 
 <script>
     export default {
         name: '',
-        layout: '',
+        layout: 'auth',
         data(){
-
+            return {}
         }
     }
 </script>

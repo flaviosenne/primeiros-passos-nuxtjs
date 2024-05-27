@@ -1,15 +1,15 @@
 <template>
     <div>
-        {{ $route.params.slug }}
+        Auth
+        <Nuxt/>
     </div>
 </template>
 
 <script>
     export default {
         name: '',
-        layout: '',
         data(){
-
+          return {}  
         }
     }
 </script>
