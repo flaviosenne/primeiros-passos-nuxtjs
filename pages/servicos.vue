@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        <br/><br/>
+        <br /><br />
         <NuxtChild />
     </div>
 </template>
@@ -23,8 +23,20 @@
 export default {
     name: '',
     layout: '',
+    head() {
+        return {
+            title: this.title,
+            meta: [
+                { hid: 'description', name: 'description', content: 'Minha descrição do serviço' },
+            ],
+            bodyAttrs: {
+                class: 'bg-gray-400'
+            }
+        }
+    },
     data() {
         return {
+            title: '',
             services: []
 
         }
@@ -38,7 +50,19 @@ export default {
             }, 3000)
         })
 
+    },
 
+    created(){
+        this.geTitle()
+    },
+
+    methods: {
+        geTitle(){
+            setTimeout(()=>{
+                this.title = 'Serviços'
+
+            },1000)
+        }
     }
 }
 </script>
