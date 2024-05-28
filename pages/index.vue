@@ -1,13 +1,18 @@
 <template>
   <div>
-    <pre>
-      {{ $store.state.user }}
-    </pre>
+
+    <VTooltip>
+      <a>Alô</a>
+      <template #popper>
+        Help...
+
+      </template>
+    </VTooltip>
+
+    <pre> {{ $store.state.user }} </pre>
 
 
-    <pre>
-      {{ user }}
-    </pre>
+    <pre> {{ user }} </pre>
   </div>
 </template>
 
@@ -15,6 +20,15 @@
 import { mapState } from 'vuex'
 export default {
   name: 'IndexPage',
+
+  data() {
+    return {}
+  },
+
+  mounted() {
+    console.log(this.$name('joão'))
+    console.log(this.$dayjs().format())
+  },
   computed: {
     ...mapState({
       user: state => state.user
