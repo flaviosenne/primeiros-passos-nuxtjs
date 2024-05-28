@@ -9,6 +9,10 @@
 export default {
     name: '',
     layout: '',
+    // middleware(){
+    //     console.log('empresa')
+    // },
+    middleware: ['auth'],
     data() {
         return {
 
