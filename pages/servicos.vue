@@ -43,7 +43,7 @@ export default {
     },
     async fetch() {
 
-        this.services = await this.$axios.$get('https://jsonplaceholder.typicode.com/users?_limit=3')
+        this.services = await this.$axios.$get('/users?_limit=3')
         await new Promise((resolve) => {
             setTimeout(() => {
                 resolve()

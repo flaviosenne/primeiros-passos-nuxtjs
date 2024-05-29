@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static', // server ou static
   head: {
     title: 'financas',
     htmlAttrs: {
@@ -40,7 +41,8 @@ export default {
       // mode: 'client'
     },
     '@/plugins/dayjs',
-    '@/plugins/vtooltip'
+    '@/plugins/vtooltip',
+    '@/plugins/axios'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
