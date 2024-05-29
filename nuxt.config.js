@@ -20,6 +20,15 @@ export default {
   // router: {
     // middleware: 'auth'
   // },
+
+  // variaveis de ambiente que estaram publica no front (client server)
+  publicRuntimeConfig:{
+    youtube_api_key: process.env.YOUTUBE_API_KEY
+  },
+  // variaveis de ambiente mais sensivel (server side) 
+  privateRuntimeConfig: {
+    facebook_api_key: process.env.FACEBOOK_API_KEY
+  },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],

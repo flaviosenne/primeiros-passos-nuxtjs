@@ -1,6 +1,10 @@
 <template>
   <div>
 
+    <pre>
+      {{ $config }}
+    </pre>
+
     <VTooltip>
       <a>Alô</a>
       <template #popper>
@@ -23,6 +27,15 @@ export default {
 
   data() {
     return {}
+  },
+
+  asyncData({$config}){
+    console.log('no async data consegue ler variável privada? ', $config.facebook_api_key)
+  },
+
+  created(){
+    console.log('variável de ambiente youtube: ' ,this.$config.youtube_api_key)
+    console.log('variável de ambiente facebook: ' ,this.$config.facebook_api_key)
   },
 
   mounted() {
